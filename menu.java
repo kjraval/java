@@ -104,7 +104,7 @@ class Helper {
                     }
 
               //      System.in.read();
-              String val = scan.nextLine();
+                    scan.close();
                  
 
                 }
@@ -122,6 +122,7 @@ class Helper {
                      
 
                     System.out.println("Total is :"+ (a+b));
+                    scan.close();
 
                 }
 
@@ -138,7 +139,7 @@ class Helper {
                      
 
                     System.out.println("Substaction is :"+ (a-b));
-
+                    scan.close();
                 }
 
               public void multiplication(){
@@ -153,6 +154,7 @@ class Helper {
                      
 
                     System.out.println("Multiplication is :"+ (a*b));
+                    scan.close();
 
                 }
               public void division(){
@@ -167,6 +169,7 @@ class Helper {
                      
 
                     System.out.println("Division is :"+ (a*b));
+                    scan.close();
 
                 }
 
@@ -186,6 +189,7 @@ class Helper {
                    
                    // [a,b] = [b,a];
                     System.out.println("a ="+(a)+"b ="+(b));
+                    scan.close();
 
                 }
 
@@ -198,8 +202,10 @@ class Helper {
 
                      for(int i =1;i<=10;i++){
 
-                        print(a+"x"+(i)+"="+(a*i));
+                    System.out.println(a+"x"+(i)+"="+(a*i));
                      }
+                     scan.close();
+                    }
                      public void armston(){
                         int num,realNum,remainder,result =0;
                         Scanner scan = new Scanner(System.in);
@@ -215,21 +221,22 @@ class Helper {
                              realNum /= 10;
                         }
                         
-                        if(result === num){
-                            System.out.println("Number is armston")
+                        if(result ==num){
+                            System.out.println("Number is armston");
                         } else {
-                            System.out.println("Number is not armston")
+                            System.out.println("Number is not armston");
                         }
+                        scan.close();
 
                      }
 
                    
 
-                }
+                
 
-                public void palidrom(){
+                public void pelidrom(){
 
-                      int num,temp.total,remainder
+                      int num,temp,total=0,remainder;
                         Scanner scan = new Scanner(System.in);
 
                         System.out.print("enter number :");
@@ -241,28 +248,29 @@ class Helper {
                         while(num >0){
 
                             //reminder
-                            remainder = number%10;
+                            remainder = num % 10;
                             total = (total*10) + remainder;
                             num /= 10;
 
                         }
 
-                          if(temp == totla){
-                            System.out.println("Number is pelidrom")
+                          if(temp == total){
+                            System.out.println("Number is pelidrom");
                         } else {
-                            System.out.println("Number is not pelidrom")
+                            System.out.println("Number is not pelidrom");
                         }
+                        scan.close();
 
                 }
 
 
                 public void dyanmicTable(){
 
-                    int a,from,to;
+                    int a=0,from,to;
                      Scanner scan = new Scanner(System.in);
 
                         System.out.print("enter table number :");
-                        num = scan.nextInt();
+                 //     int num = scan.nextInt();
 
                             System.out.print("enter starting number of table :");
                         from = scan.nextInt();
@@ -273,13 +281,13 @@ class Helper {
 
                         for(int i =from;i<to;i++){
 
-                            System.out.println(a+"x"+(i)+"="+(a*i))
+                            System.out.println(a+"x"+(i)+"="+(a*i));
                         }
 
 
 
 
-
+                        scan.close();
 
                 }
 
